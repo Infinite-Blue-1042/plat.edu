@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="{{ url_for('home') }}">E</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+    <form action="#" method="post">
+        <h1>Login</h1>
+        <center>
+            <p><input type="text" name="nm" placeholder="First Name" /></p>
+            <p><input type="password" name="pass" placeholder="Code" /></p>
+            <p><input type="submit" value="Submit"/></p>
+        </center>
+    </form>
+</body>
+</html>
